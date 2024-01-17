@@ -1,18 +1,22 @@
-# from random import randint
-#
-# comp = randint(1, 100)
-# user = 0
-# count = 0
-#
-# while user != comp:
-#     count += 1
-#     user = int(input("Угадай число: "))
-#     if comp > user:
-#         print("Твоё число меньше. Введите число побольше!")
-#     elif comp < user:
-#         print("Твоё число слишком большое. Нужно поменьше!")
-# else:
-#     print(f"Ты угадал с {count} попытки!")
+from random import randint
+import datetime
+
+start = datetime.datetime.now()
+comp = randint(1, 100)
+user = 0
+count = 0
+
+while user != comp:
+    count += 1
+    user = int(input("Угадай число: "))
+    if comp > user:
+        print("Твоё число меньше. Введите число побольше!")
+    elif comp < user:
+        print("Твоё число слишком большое. Нужно поменьше!")
+else:
+    print(f"Ты угадал с {count} попытки!")
+    stop = datetime.datetime.now()
+    print(f"Ви витратили {stop - start} сек")
 
 # a = int(input("Введите начало диапозона: "))
 # b = int(input("Введите конец диапозона: "))
