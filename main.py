@@ -14,16 +14,16 @@
 # else:
 #     print(f"Ты угадал с {count} попытки!")
 
-a = int(input("Введите начало диапозона: "))
-b = int(input("Введите конец диапозона: "))
-
-
-while a < b:
-    users_value = int(input("Введите еще любое число: "))
-    if users_value >= a and users_value <= b:
-        break
-for i in range(a, b+1):
-    if i == users_value:
-        print(f"!{i}!", end=" ")
-    else:
-        print(i, end=" ")
+# a = int(input("Введите начало диапозона: "))
+# b = int(input("Введите конец диапозона: "))
+#
+#
+# while a < b:
+#     users_value = int(input("Введите еще любое число: "))
+#     if users_value >= a and users_value <= b:
+#         break
+# for i in range(a, b+1):
+#     if i == users_value:
+#         print(f"!{i}!", end=" ")
+#     else:
+#         print(i, end=" ")
